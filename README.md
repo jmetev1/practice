@@ -5,3 +5,5 @@
 There are two tests, an [HTML 5 / JS test](html5) & a [C# test](csharp).
 
 Choose wisely.
+
+![choose wisely](choose-wisely.jpg)
