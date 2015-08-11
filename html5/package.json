@@ -1,0 +1,27 @@
+{
+  "name": "@civicsource/interview",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Archon HTML5 Interview Test",
+  "main": "server.js",
+  "author": "Archon Information Systems",
+  "scripts": {
+    "build-debug": "browserify public/index.js -d -o public/build.js",
+    "watch": "watchify public/index.js -d -o public/build.js",
+    "start": "npm run build-debug && node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/civicsource/interview.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "browserify": "^11.0.0",
+    "watchify": "^3.2.3"
+  }
+}
