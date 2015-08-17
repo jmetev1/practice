@@ -18,8 +18,7 @@
     "accounting": "^0.4.1",
     "body-parser": "^1.13.3",
     "express": "^4.13.3",
-    "jquery": "^2.1.4",
-    "lodash": "^3.10.1"
+    "jquery": "^2.1.4"
   },
   "devDependencies": {
     "browserify": "^11.0.0",
