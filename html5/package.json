@@ -6,9 +6,9 @@
   "main": "server.js",
   "author": "Archon Information Systems",
   "scripts": {
-    "build-debug": "browserify public/index.js -d -o public/build.js",
+    "build": "browserify public/index.js -d -o public/build.js",
     "watch": "watchify public/index.js -d -o public/build.js",
-    "start": "npm run build-debug && node server.js"
+    "start": "npm run build && node server.js"
   },
   "repository": {
     "type": "git",
