@@ -8,10 +8,10 @@ var items = [{
 	item: "Homer Simpson's Right Toenail",
 	price: 0.47
 }, {
-	text: "Avatar (the movie)",
+	item: "Avatar (the movie)",
 	price: 237000000
 }, {
-	text: "Arc Reactor",
+	item: "Arc Reactor",
 	price: 42
 }];
 
