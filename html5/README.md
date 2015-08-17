@@ -26,7 +26,7 @@ The `index.js` file in the `public` folder is set to be built with [browserify](
 
 	> HINT: Don't spend time implementing a currency parser / formatter. Utilize one of the many npm packages or sample code out there to do that.
 
-2. Update the table to pull data from a JSON API. Make an AJAX `GET` request to `/items` which will return a JSON array of items with a `item` & `price` fields. Make sure to keep the price formatted as US Currency. The data returned from the API will look something like this:
+2. Update the table to pull data from a JSON API on page load. Make an AJAX `GET` request to `/items` which will return a JSON array of items with `item` & `price` fields. Make sure to keep the price formatted as US Currency in the widgets table. The data returned from the API will look something like this:
 
 	```json
 	[{
