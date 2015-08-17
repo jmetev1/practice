@@ -22,3 +22,4 @@ Clone this repo onto the interview computer. Delete everything in the root and o
 2. Run `npm start`
 3. Open Chrome to [localhost:1337](http://localhost:1337/). Confirm you see the HTML5 test.
 4. Open a new command prompt, run `npm run watch`
+5. Open the project folder in [Atom](https://atom.io/)
