@@ -7,6 +7,12 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<style media="screen">
+			.item {
+				text-align: left;
+			}
+		</style>
 	</head>
 	<body>
 		<header class="jumbotron">
@@ -16,9 +22,28 @@
 		</header>
 
 		<div class="container">
-			<h2>TODO List</h2>
+			<h2>Table of Widgets</h2>
 
-			<p>See the README</p>
+			<table class="table">
+				<thead>
+					<th class="item">Item</th>
+					<th class="price">Price</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="item">Hair Club for Men</td>
+						<td class="price">$399.99</td>
+					</tr>
+					<tr>
+						<td class="item">Luke Skywalker's Lightsaber</td>
+						<td class="price">$1,999.99</td>
+					</tr>
+					<tr>
+						<td class="item">Pet Rock</td>
+						<td class="price">$0.87</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 
 		<script src="/build.js"></script>

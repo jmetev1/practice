@@ -1,6 +1,5 @@
-var api = require("./api");
+var $ = require("jquery");
 
-api.getItems().then(function(items) {
-	//do something with the items
-	console.log(items);
+$(function() {
+	//the document is ready; write some code
 });
