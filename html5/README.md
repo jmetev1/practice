@@ -14,7 +14,7 @@ The page is including the [bootstrap](http://getbootstrap.com/) base CSS file. F
 
 1. Add a footer to the table which will eventually show the sum total price of all the items in the table. The left column should read _Sum:_, while the right column will read _$0.00_ for now.
 
-2. Center-align the header fields. Leave the table body item fields left-aligned. Right-align the price field in the table.
+2. Center-align the header fields. Leave the table body & footer item fields left-aligned. Right-align the price field in the table body & footer.
 
 3. Zebra-stripe the table. In other words, highlight every other row with a light-grayish-type color.
 
