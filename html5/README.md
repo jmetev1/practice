@@ -8,13 +8,11 @@ There exists a UI which lacks the tender loving care it so desperately needs. Yo
 
 ### Tasks
 
-Feel free to do each task in any order you like.
-
 #### HTML/CSS
 
 The page is including the [bootstrap](http://getbootstrap.com/) base CSS file. Feel free to use any bootstrap and/or custom styles to implement the following:
 
-1. Add a footer to the table which will show the sum total price of all the items in the table. The left column should read _Sum:_, while the right column will read _$0.00_ for now.
+1. Add a footer to the table which will eventually show the sum total price of all the items in the table. The left column should read _Sum:_, while the right column will read _$0.00_ for now.
 
 2. Center-align the header fields. Leave the table body item fields left-aligned. Right-align the price field in the table.
 
@@ -40,7 +38,7 @@ The `index.js` file in the `public` folder is set to be built with [browserify](
 	}]
 	```
 
-3. Add a new form to the bottom of the page to allow adding new items to the list. Don't worry about validation of the field inputs yet. Use a `number` field for the price to allow modern browsers & mobile devices to show a spinner control. When you add a new item, it should save it to the server by issuing a `POST`  request to `/items`. The `POST` body should be JSON:
+3. Wire up the _Add New_ form at the bottom of the page to add new items to the table. When you add a new item, it should add it to the end of the table. It should also save the new item to the server by issuing a `POST` request to `/items`. The `POST` body should be JSON (the server won't accept form data):
 
 	```json
 	{
@@ -51,4 +49,4 @@ The `index.js` file in the `public` folder is set to be built with [browserify](
 
 	The server only accepts the price as a decimal value. Don't send formatted values to the server.
 
-4. Add validation to the form to require the item name to not be empty and the price to be greater than zero.
+4. Add validation to the form to require the item name to not be empty and the price to be greater than zero. The price field should be liberal in what it accepts (e.g. _5000_, _$5000_, _5000.00_, _5,000.00_, & _$5,000.00_ should all be valid values).
