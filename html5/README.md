@@ -10,7 +10,7 @@ There exists a UI which lacks the tender loving care it so desperately needs. Yo
 
 #### HTML/CSS
 
-The page is including the bootstrap base CSS file. Feel free to use any bootstrap and/or custom styles to implement the following:
+The page is including the [bootstrap](http://getbootstrap.com/) base CSS file. Feel free to use any bootstrap and/or custom styles to implement the following:
 
 1. Add a footer to the table which will show the sum total price of all the items in the table.
 
@@ -24,17 +24,17 @@ The page is including the bootstrap base CSS file. Feel free to use any bootstra
 
 The `index.js` file in the `public` folder is set to be built with [browserify](http://browserify.org/). Any change you make to the file will auto-build into `build.js` which the page is including. You should be able to edit the file, refresh the page, and see your changes. Feel free to use any package available on [npm](https://www.npmjs.com/) to implement the following:
 
-1. Update the table to pull data from a JSON API. Make an AJAX `GET` request to `/items` which will return a JSON array of items with an `item` & `price` fields. Make sure to keep the price formatted the same way it is now (with a dollar sign and 2 decimal points).
+1. Update the table to pull data from a JSON API. Make an AJAX `GET` request to `/items` which will return a JSON array of items with a `item` & `price` fields. Make sure to keep the price formatted the same way it is now (with a dollar sign and 2 decimal points).
 
 2. Add a new form to the bottom of the page to allow adding new items to the list. Don't worry about validation of the field inputs yet. Use a `number` field for the price to allow modern browsers & mobile devices to show a spinner control. When you add a new item, it should save it to the server by issuing a `POST`  request to `/items`. The `POST` body should be JSON:
 
-```json
-{
-	"item": "My Awesome New Thing",
-	"price": 552
-}
-```
+	```json
+	{
+		"item": "My Awesome New Thing",
+		"price": 552
+	}
+	```
 
-The server only accepts the price as a decimal value. Don't send formatted values to the server.
+	The server only accepts the price as a decimal value. Don't send formatted values to the server.
 
 3. Add validation to the form to require the item name to not be empty and the price to be greater than zero.
