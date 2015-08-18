@@ -8,6 +8,8 @@ There exists a UI which lacks the tender loving care it so desperately needs. Yo
 
 ### Tasks
 
+Feel free to do each task in any order you like.
+
 #### HTML/CSS
 
 The page is including the [bootstrap](http://getbootstrap.com/) base CSS file. Feel free to use any bootstrap and/or custom styles to implement the following:
@@ -24,7 +26,7 @@ The `index.js` file in the `public` folder is set to be built with [browserify](
 
 1. Update the table footer to sum the prices in the table. Make sure to format the sum total price in US currency format (with a dollar sign, commas, and 2 decimal points).
 
-2. Update the table to pull data from a JSON API on page load. Make an AJAX `GET` request to `/items` which will return a JSON array of items with `item` & `price` fields. Make sure to keep the price formatted as US Currency in the widgets table. The data returned from the API will look something like this:
+2. Update the table to pull data from a JSON API on page load (replace the data currently in the table with data from the JSON API). Make an AJAX `GET` request to `/items` which will return a JSON array of items with `item` & `price` fields. Make sure to keep the price formatted as US Currency in the widgets table. The data returned from the API will look something like this:
 
 	```json
 	[{
