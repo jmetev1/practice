@@ -1,6 +1,6 @@
 # How this Test Works
 
-You have 30 minutes to accomplish as many of the tasks below as possible. After 30 minutes, you must stop, the time cannot be extended. Someone will check in with you after 15 minutes to answer any questions you may have. Focus on results and don't try to impress us with software patterns or fancy code tricks.
+You have 45 minutes to accomplish as many of the tasks below as possible. After 45 minutes, you must stop, the time cannot be extended. Someone will check in with you after 15 minutes to answer any questions you may have. Focus on results and don't try to impress us with software patterns or fancy code tricks.
 
 ## The Situation
 
