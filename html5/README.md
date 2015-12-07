@@ -3,7 +3,7 @@
 1. Make sure you have [node.js](https://nodejs.org) installed (it's open source and available on all major platforms)
 2. Open a command prompt or a terminal in this directory (where you cloned this repo), run `npm install`. This will install dependencies needed to build the scripts for the page.
 2. Run `npm start`. This will build the scripts and start a local test web server.
-3. Open Chrome (or your favorite browser) to [localhost:1337](http://localhost:1337/). Confirm you see the HTML5 test.
+3. Open a browser and navigate to [localhost:1337](http://localhost:1337/). Confirm you see the HTML5 test.
 4. Open a new command prompt / terminal, run `npm run watch`. This will set it up so any changes you make to the code will auto-build once you save the file.
 5. Open the project folder in your favorite text editor ([Atom](https://atom.io/) is our favorite).
 
