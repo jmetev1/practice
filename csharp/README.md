@@ -6,7 +6,7 @@
 
 ## The Situation
 
-A client has given Archon a file containing property data. We need to get this data into our system so we can begin collecting delinquent taxes for the client. The file is from a 1988 vintage IBM AS/400, which means it's a fixed column width text file, with fields padded with trailing spaces, consisting of the following columns:
+A client has given us a file containing property data. We need to get this data into our system so we can begin collecting delinquent taxes for the client. The file is from a 1988 vintage IBM AS/400, which means it's a fixed column width text file, with fields padded with trailing spaces, consisting of the following columns:
 
 ```
 AccountNumber	9 characters
