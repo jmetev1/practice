@@ -13,7 +13,7 @@ There exists a UI which lacks the tender loving care it so desperately needs. Yo
 
 ### Tasks
 
-> Feel free to do the tasks in any order you like.
+> Feel free to do the tasks in any order you like. The two files you are interested in to implement these tasks are `public/index.html` & `public/index.js`. Feel free to add more files to the `public` folder if you need to.
 
 #### HTML/CSS
 
