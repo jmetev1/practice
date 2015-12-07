@@ -27,7 +27,7 @@ The page is including the [bootstrap](http://getbootstrap.com/) base CSS file. F
 
 #### Javascript
 
-The `index.js` file in the `public` folder is set to be built with [browserify](http://browserify.org/). Any change you make to the file will auto-build into `build.js` which the page is including. You should be able to edit the file, refresh the page, and see your changes. Feel free to use any package available on [npm](https://www.npmjs.com/) to implement the following:
+The `index.js` file in the `public` folder is set to be built with [browserify](http://browserify.org/). Any change you make to the file will auto-build into `build.js` which the page is including. You should be able to edit the file, refresh the page, and see your changes. Feel free to use any package, library, or framework available on [npm](https://www.npmjs.com/) to implement the following:
 
 1. Update the table footer to sum the prices in the table. Make sure to format the sum total price in US currency format (with a dollar sign, commas, and 2 decimal points).
 
