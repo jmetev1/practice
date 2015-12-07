@@ -1,25 +1,11 @@
-# Interview Tests
+# CivicSource Development Interview
 
-> Tests to give to scared interviewees
+There are two tests in this repo designed to get a quick grasp of your dev abilities. [Create a `solution` branch](https://help.github.com/articles/creating-and-deleting-branches-within-your-repository/) in this repo and submit a pull request when you are done.
 
-There are two tests, an [HTML 5 / JS test](html5) & a [C# test](csharp).
+Each test has a list of tasks to complete. If you don't get through all of it or if you feel like it is taking too long, it's not a big deal. Just explain what you did, what you didn't get to, any problems you faced, and any other relevant information in your pull request.
+
+There is an [HTML 5 / JS test](html5) & a [C# test](csharp). Choose which one you would like to do.
 
 ![choose wisely](choose-wisely.jpg)
 
-## Setup the Tests for the Interviewee
-
-Clone this repo onto the interview computer. Delete everything in the root and only leave behind the folder of the test you want to give (e.g. `csharp` or `html5`).
-
-### C# test
-
-1. Open the solution in Visual Studio
-2. Build the solution. It should restore nuget dependencies and successfully build.
-3. Make sure the test cases are able to be run via the Test Explorer.
-
-### HTML5 Test
-
-1. Open command prompt, run `npm install`
-2. Run `npm start`
-3. Open Chrome to [localhost:1337](http://localhost:1337/). Confirm you see the HTML5 test.
-4. Open a new command prompt, run `npm run watch`
-5. Open the project folder in [Atom](https://atom.io/)
+Or, if you like, do them both.

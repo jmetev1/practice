@@ -1,6 +1,11 @@
-# How this Test Works
+# Setup
 
-You have 90 minutes to accomplish as many of the tasks below as possible. After 90 minutes, you must stop. The time cannot be extended. Someone will check in with you periodically to answer any questions you may have. Focus on results and don't try to impress us with software patterns or fancy code tricks.
+1. Make sure you have [node.js](https://nodejs.org) installed (it's open source and available on all major platforms)
+2. Open a command prompt or a terminal in this directory (where you cloned this repo), run `npm install`. This will install dependencies needed to build the scripts for the page.
+2. Run `npm start`. This will build the scripts and start a local test web server.
+3. Open Chrome (or your favorite browser) to [localhost:1337](http://localhost:1337/). Confirm you see the HTML5 test.
+4. Open a new command prompt / terminal, run `npm run watch`. This will set it up so any changes you make to the code will auto-build once you save the file.
+5. Open the project folder in your favorite text editor ([Atom](https://atom.io/) is are favorite).
 
 ## The Situation
 
@@ -8,7 +13,7 @@ There exists a UI which lacks the tender loving care it so desperately needs. Yo
 
 ### Tasks
 
-**Feel free to do each task in any order you like.**
+> Feel free to do the tasks in any order you like.
 
 #### HTML/CSS
 

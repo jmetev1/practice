@@ -1,6 +1,8 @@
-# How this Test Works
+# Setup
 
-You have 30 minutes to accomplish as many of the tasks below as possible. After 30 minutes, you must stop, the time cannot be extended. Someone will check in with you after 15 minutes to answer any questions you may have. Focus on results and don't try to impress us with software patterns or fancy code tricks.
+1. Make sure you have [Visual Studio installed](https://www.visualstudio.com) (it's free!)
+2. Open the solution in Visual Studio (the `.sln` file)
+3. Build the solution. It should auto-restore any nuget dependencies and successfully build.
 
 ## The Situation
 
@@ -16,6 +18,8 @@ Each line in the file represents a delinquent property, with an account number a
 
 ### Tasks
 
+> Answer each of the questions in the pull request when you submit your solution.
+
 1.	Parse the data. Parse each line into a new instance of the `Property` object. Put each instance you create into a list of properties (`List<Property>`) or an array (`Property[]`).
 
 	**How many properties are in the file?**
@@ -28,6 +32,14 @@ Each line in the file represents a delinquent property, with an account number a
 
 	**How many properties are in the third district?**
 
-4.	Implement `Property.IsOnStreet()`. Delete the `NotImplementedException` that is thrown and provide an implementation for this method that returns `true` if the street name is found in `Address1`. The method should do a case insensitive comparison. For example, if the `Property.Address1` is _935 GRAVIER ST_ then `Property.IsOnStreet("Gravier")` should return true. The method should also trim leading and trailing spaces from the `streetName` parameter. The method should throw an exception if `streetName` is null or empty.
+4.	Implement `Property.IsOnStreet()`. Delete the `NotImplementedException` that is thrown and provide an implementation for this method that returns `true` if the street name is found in `Address1`. The method should do a case insensitive comparison. For example, if the `Property.Address1` is _935 GRAVIER ST_ then `Property.IsOnStreet("Gravier")` should return true. The method should also trim leading and trailing spaces from the `streetName` parameter. The method should throw an exception if `streetName` is `null` or empty.
 
 	**How many properties are on Tchoupitoulas Street?**
+
+#### Bonus Points
+
+1. Add a test project using your favorite testing framework (hint: [xUnit.net](http://xunit.github.io/) is a nice one).
+
+2. Add a test case to assert the logic is correct for `Property.IsApartment`.
+
+3. Add a test case to assert the logic is correct for `Property.IsOnStreet()`.
