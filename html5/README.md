@@ -5,7 +5,7 @@
 2. Run `npm start`. This will build the scripts and start a local test web server.
 3. Open Chrome (or your favorite browser) to [localhost:1337](http://localhost:1337/). Confirm you see the HTML5 test.
 4. Open a new command prompt / terminal, run `npm run watch`. This will set it up so any changes you make to the code will auto-build once you save the file.
-5. Open the project folder in your favorite text editor ([Atom](https://atom.io/) is are favorite).
+5. Open the project folder in your favorite text editor ([Atom](https://atom.io/) is our favorite).
 
 ## The Situation
 
