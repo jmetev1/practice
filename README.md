@@ -7,5 +7,3 @@ Each test has a list of tasks to complete. If you don't get through all of it or
 There is an [HTML 5 / JS test](html5) & a [C# test](csharp). Choose which one you would like to do.
 
 ![choose wisely](choose-wisely.jpg)
-
-Or, if you like, do them both.
