@@ -24,7 +24,7 @@ Each line in the file represents a delinquent property, with an account number a
 
 	**How many properties are in the file?**
 
-2.	The implementation of `Property.IsApartment` is not complete. Right now it always returns `true`, but it should only return true if `Address2` contains text, which indicates an apartment or suite number is present. Modify `IsApartment` so that it returns `true` when there is a non-empty `string` in `Address2`, otherwise return `false`.
+2.	The implementation of `Property.IsApartment` is not complete. Right now it always returns `true`, but it should only return `true` if `Address2` contains text, which indicates an apartment or suite number is present. Modify `IsApartment` so that it returns `true` when there is a non-empty `string` in `Address2`, otherwise return `false`.
 
 	**How many properties are apartments?**
 
@@ -32,7 +32,7 @@ Each line in the file represents a delinquent property, with an account number a
 
 	**How many properties are in the third district?**
 
-4.	Implement `Property.IsOnStreet()`. Delete the `NotImplementedException` that is thrown and provide an implementation for this method that returns `true` if the street name is found in `Address1`. The method should do a case insensitive comparison. For example, if the `Property.Address1` is _935 GRAVIER ST_ then `Property.IsOnStreet("Gravier")` should return true. The method should also trim leading and trailing spaces from the `streetName` parameter. The method should throw an exception if `streetName` is `null` or empty.
+4.	Implement `Property.IsOnStreet()`. Delete the `NotImplementedException` that is thrown and provide an implementation for this method that returns `true` if the street name is found in `Address1`. The method should do a case insensitive comparison. For example, if the `Property.Address1` is _935 GRAVIER ST_ then `Property.IsOnStreet("Gravier")` should return `true`. The method should also trim leading and trailing spaces from the `streetName` parameter. The method should throw an exception if `streetName` is `null` or empty.
 
 	**How many properties are on Tchoupitoulas Street?**
 
