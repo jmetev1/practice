@@ -30,7 +30,7 @@ namespace Archon.Interview.ListTest
 		public Property(string accountNumber, string address1, string address2)
 		{
 			if (string.IsNullOrEmpty(accountNumber))
-				throw new ArgumentNullException("Account number is required");
+				throw new ArgumentNullException("accountNumber", "Account number is required");
 
 			this.AccountNumber = accountNumber;
 			this.Address1 = address1;
