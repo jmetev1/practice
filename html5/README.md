@@ -1,11 +1,10 @@
 # Setup
 
 1. Make sure you have [node.js](https://nodejs.org) installed (it's open source and available on all major platforms)
-2. Open a command prompt or a terminal in this directory (where you cloned this repo), run `npm install`. This will install dependencies needed to build the scripts for the page.
-2. Run `npm start`. This will build the scripts and start a local test web server.
-3. Open a browser and navigate to [localhost:1337](http://localhost:1337/). Confirm you see the HTML5 test.
-4. Open a new command prompt / terminal, run `npm run watch`. This will set it up so any changes you make to the code will auto-build once you save the file.
-5. Open the project folder in your favorite text editor ([Atom](https://atom.io/) is our favorite).
+2. Open a command prompt or a terminal in this directory (where you cloned this repo), run `npm install`. This will download dependencies needed to build the scripts for the page into the `node_modules` folder relative to this directory.
+3. Run `npm start`. This will build the scripts, start a local test web server, and open your default browser to [`localhost:1367`](http://localhost:1367/).
+4. It is using [webpack](https://webpack.js.org/) to build the scripts and bundle it for the browser. If you don't know what that is, don't fret. All you need to know is that any changes you make within the `public` folder will automatically build. You should be able to make a change, refresh the page, and see the results.
+5. Open the project folder in your favorite text editor ([VS Code](https://code.visualstudio.com/) is our favorite).
 
 ## The Situation
 
@@ -27,7 +26,7 @@ The page is including the [bootstrap](http://getbootstrap.com/) base CSS file. F
 
 #### Javascript
 
-The `index.js` file in the `public` folder is set to be built with [browserify](http://browserify.org/). Any change you make to the file will auto-build into `build.js` which the page is including. You should be able to edit the file, refresh the page, and see your changes. Feel free to use any package, library, or framework available on [npm](https://www.npmjs.com/) to implement the following:
+Feel free to use any package, library, or framework available on [npm](https://www.npmjs.com/) to implement the following:
 
 1. Update the table footer to sum the prices in the table. Make sure to format the sum total price in US currency format (with a dollar sign, commas, and 2 decimal points).
 
