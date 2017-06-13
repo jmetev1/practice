@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>Archon.Interview</AssemblyName>
+    <RootNamespace>Archon.Interview</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="ClientData.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

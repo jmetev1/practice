@@ -1,7 +1,7 @@
 # Setup
 
-1. Make sure you have [Visual Studio installed](https://www.visualstudio.com) (it's free!)
-2. Open the solution in Visual Studio (the `.sln` file)
+1. Make sure you have [.net core installed](https://www.microsoft.com/net/core) (it's open source and available on all major platforms)
+2. Open the solution in either [Visual Studio](https://www.visualstudio.com/) or in [VS Code](https://code.visualstudio.com/)
 3. Build the solution. It should auto-restore any nuget dependencies and successfully build.
 
 ## The Situation
