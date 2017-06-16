@@ -1,7 +1,6 @@
-const path = require("path");
-const webpack = require("webpack");
+import path from "path";
 
-module.exports = {
+export default {
 	entry: "./public/index.js",
 	devServer: {
 		port: 1367,
