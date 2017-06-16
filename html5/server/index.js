@@ -2,6 +2,7 @@ import path from "path";
 import express from "express";
 import bodyParser from "body-parser";
 import httpProxy from "http-proxy";
+import open from "open";
 
 import bundle from "./bundler";
 
@@ -72,5 +73,6 @@ proxy.on("error", () => {
 });
 
 app.listen(1337, () => {
-	console.log("App listening at http://localhost:1337/");
+	console.log("App listening at localhost:1337");
+	open("http://localhost:1337/");
 });
