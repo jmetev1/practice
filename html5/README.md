@@ -2,7 +2,7 @@
 
 1. Make sure you have [node.js](https://nodejs.org) installed (it's open source and available on all major platforms)
 2. Open a command prompt or a terminal in this directory (where you cloned this repo), run `npm install`. This will download dependencies needed to build the scripts for the page into the `node_modules` folder relative to this directory.
-3. Run `npm start`. This will build the scripts, start a local test web server, and open your default browser to [`localhost:1367`](http://localhost:1367/).
+3. Run `npm start`. This will build the scripts, start a local test web server, and open your default browser to [`localhost:1337`](http://localhost:1337/).
 4. It is using [webpack](https://webpack.js.org/) to build the scripts and bundle it for the browser. If you don't know what that is, don't fret. All you need to know is that any changes you make within the `public` folder will automatically build. You should be able to make a change, refresh the page, and see the results.
 5. Open the project folder in your favorite text editor ([VS Code](https://code.visualstudio.com/) is our favorite).
 

@@ -1,11 +1,15 @@
 import path from "path";
 
 export default {
-	entry: "./public/index.js",
+	entry: path.resolve("./public/index.js"),
+	output: {
+		path: path.resolve(__dirname, "public"),
+		publicPath: "/bundle/",
+		filename: "build.js",
+		sourceMapFilename: "build.js.map"
+	},
 	devServer: {
-		port: 1367,
-		open: true,
-		contentBase: "public"
+		contentBase: path.resolve("./public")
 	},
 	devtool: "source-map",
 	resolve: {

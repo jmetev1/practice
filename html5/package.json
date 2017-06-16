@@ -6,7 +6,7 @@
   "main": "server.js",
   "author": "Archon Information Systems",
   "scripts": {
-    "start": "webpack-dev-server --progress",
+    "start": "babel-node server/index.js",
     "lint": "eslint ."
   },
   "repository": {
@@ -17,6 +17,7 @@
     "accounting": "^0.4.1",
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
+    "http-proxy": "^1.16.2",
     "jquery": "^3.2.1",
     "lodash": "^4.17.4"
   },
@@ -26,6 +27,7 @@
     "babel-loader": "^7.0.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "eslint": "^4.0.0",
     "eslint-config-civicsource": "^6.1.0",
     "webpack": "^2.6.1",
@@ -33,7 +35,8 @@
   },
   "babel": {
     "presets": [
-      "es2015"
+      "es2015",
+      "stage-2"
     ]
   }
 }

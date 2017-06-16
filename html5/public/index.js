@@ -5,5 +5,5 @@ import accounting from "accounting"; // use this for currency formatting/parsing
 import lodash from "lodash"; // useful utility functions (https://lodash.com/docs/4.17.4)
 
 $(function() {
-	//the document is ready; write some code
+	// the document is ready; write some code
 });
