@@ -7,6 +7,11 @@
     <RootNamespace>Archon.Interview</RootNamespace>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+    <TreatSpecificWarningsAsErrors />
+  </PropertyGroup>
+
   <ItemGroup>
     <Content Include="ClientData.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

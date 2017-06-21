@@ -36,10 +36,10 @@ Each line in the file represents a delinquent property, with an account number a
 
 	**How many properties are on Tchoupitoulas Street?**
 
-#### Bonus Points
+### Testing
 
-1. Add a test project using your favorite testing framework (hint: [xUnit.net](http://xunit.github.io/) is a nice one).
+There is a test project called `Interview.Tests` in the solution with a single empty `PropertyTests` file. The project is using [xunit.net](https://xunit.github.io/) to run tests. You should be able to run the tests from Visual Studio or Visual Studio Code. Implement the following in the `PropertyTests.cs` file.
 
-2. Add a test case to assert the logic is correct for `Property.IsApartment`.
+1. Add test cases to assert the logic is correct for `Property.IsApartment`.
 
-3. Add a test case to assert the logic is correct for `Property.IsOnStreet()`.
+2. Add test cases to assert the logic is correct for `Property.IsOnStreet()`.
