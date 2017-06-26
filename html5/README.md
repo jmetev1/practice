@@ -8,29 +8,15 @@
 
 ## The Situation
 
-There exists a UI which lacks the tender loving care it so desperately needs. You will need to improve the UI and hook it up to a real data source. The HTML page is currently displaying a list of widgets and their associated prices in a table.
+You have a client who sells widgets online. She already has a mobile app that allows people to buy her widgets online that works by talking to an existing backend API. She now wants you to wire up a web app to that same API so she can manage what she is selling from the web.
 
 ### Tasks
 
-> Feel free to do the tasks in any order you like. The two files you are interested in to implement these tasks are `public/index.html` & `public/index.js`. Feel free to add more files to the `public` folder if you need to.
+The two files you are interested in to implement these tasks are `public/index.html` & `public/index.js`. Feel free to add as many files as you want to the `public` folder if you need to.
 
-#### HTML/CSS
+For your convenience, the page is including the [bootstrap](http://getbootstrap.com/) base CSS file. Feel free to use any bootstrap and/or custom styles along with any package, library, or framework available on [npm](https://www.npmjs.com/) to implement the following:
 
-The page is including the [bootstrap](http://getbootstrap.com/) base CSS file. Feel free to use any bootstrap and/or custom styles to implement the following:
-
-1. Add a footer to the table which will eventually show the sum total price of all the items in the table. The left column should read _Sum:_, while the right column will read _$0.00_ for now.
-
-2. Center-align the header fields. Leave the table body & footer item fields left-aligned. Right-align the price field in the table body & footer.
-
-3. Zebra-stripe the table. In other words, highlight every other row with a light-grayish-type color.
-
-#### Javascript
-
-Feel free to use any package, library, or framework available on [npm](https://www.npmjs.com/) to implement the following:
-
-1. Update the table footer to sum the prices in the table. Make sure to format the sum total price in US currency format (with a dollar sign, commas, and 2 decimal points).
-
-2. Update the table to pull data from a JSON API on page load (replace the data currently in the table with data from the JSON API). Make an AJAX `GET` request to `/items` which will return a JSON array of items with `item` & `price` fields. Make sure to keep the price formatted as US Currency in the widgets table. The data returned from the API will look something like this:
+1. Render a table of the existing widgets available for sale. The table should show 2 columns: _Item_ & _Price_. Make a `GET` request on page load to `/items` which will return a JSON array of items with `item` & `price` fields. The data returned from the API will look something like this:
 
 	```json
 	[{
@@ -42,7 +28,15 @@ Feel free to use any package, library, or framework available on [npm](https://w
 	}]
 	```
 
-3. Wire up the _Add New_ form at the bottom of the page to add new items to the table. When you add a new item, it should add it to the end of the table. It should also save the new item to the server by issuing a `POST` request to `/items`. The `POST` body should be JSON (the server won't accept form data):
+2. Format the _price_ in the table as US Currency (with a dollar sign, commas, and 2 decimal points) _[hint hint](http://openexchangerates.github.io/accounting.js/)_.
+
+3. Sum the price of all items and include it as _Total_ in the footer of the table. Make sure to also format the total as US Currency.
+
+4. Center-align & bold the header fields. Leave the table body & footer item fields left-aligned. Right-align the price field in the table body & footer.
+
+5. Zebra-stripe the table. In other words, highlight every other row with a light-grayish-type color.
+
+6. Add an _Add New_ form to the bottom of the page to add new items to the table. The form should have two text boxes for _Item_ & _Price_. When you submit the form, it should add the new item to the end of the table. It should also save the new item to the server by issuing a `POST` request to `/items`. The `POST` body should be JSON (the server won't accept form data):
 
 	```json
 	{
@@ -51,6 +45,6 @@ Feel free to use any package, library, or framework available on [npm](https://w
 	}
 	```
 
-	The server will accept decimal values or US currency formatted values (e.g. _$500_).
+	The server will accept decimal values or US currency formatted values (e.g. _$500_) for the _price_ field.
 
-4. Add validation to the form to require the item name to not be empty and the price to be greater than zero. The price field should be liberal in what it accepts (e.g. _5000_, _$5000_, _5000.00_, _5,000.00_, & _$5,000.00_ should all be valid values).
+7. Add validation to the form to require the item name to not be empty and the price to be greater than zero. The price field should be liberal in what it accepts (e.g. _5000_, _$5000_, _5000.00_, _5,000.00_, & _$5,000.00_ should all be valid values). Inform the user of validation issues in whatever way you deem most appropriate.

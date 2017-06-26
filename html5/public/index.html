@@ -1,67 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>HTML5 Interview</title>
+		<title>Front End Interview</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-		<style media="screen">
-			.item {
-				text-align: left;
-			}
-		</style>
 	</head>
 	<body>
 		<header class="jumbotron">
 			<div class="container">
-				<h1>HTML5 Interview</h1>
+				<h1>Front End Interview</h1>
 			</div>
 		</header>
 
-		<div class="container">
-			<h2>Table of Widgets</h2>
-
-			<table class="table">
-				<thead>
-					<th class="item">Item</th>
-					<th class="price">Price</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="item">Hair Club for Men</td>
-						<td class="price">$399.99</td>
-					</tr>
-					<tr>
-						<td class="item">Luke Skywalker's Lightsaber</td>
-						<td class="price">$1,999.99</td>
-					</tr>
-					<tr>
-						<td class="item">Pet Rock</td>
-						<td class="price">$0.87</td>
-					</tr>
-				</tbody>
-			</table>
-
-			<hr />
-
-			<form class="add-item-form" method="POST" action="/items">
-				<h2>Add New Widget</h2>
-
-				<div class="form-group">
-					<label class="control-label" for="itemName">Item Name</label>
-					<input class="form-control" type="text" name="item" id="itemName" />
-
-					<label class="control-label" for="itemPrice">Price</label>
-					<input class="form-control" type="text" name="price" id="itemPrice" />
-				</div>
-				<div class="text-right">
-					<button type="submit" class="btn btn-primary">Add Item</button>
-				</div>
-			</form>
-		</div>
+		<main id="app" class="container">
+			Loading...
+		</main>
 
 		<script src="/bundle/build.js"></script>
 	</body>
