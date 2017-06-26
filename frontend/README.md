@@ -3,8 +3,7 @@
 1. Make sure you have [node.js](https://nodejs.org) installed (it's open source and available on all major platforms)
 2. Open a command prompt or a terminal in this directory (where you cloned this repo), run `npm install`. This will download dependencies needed to build the scripts for the page into the `node_modules` folder relative to this directory.
 3. Run `npm start`. This will build the scripts, start a local test web server, and open your default browser to [`localhost:1337`](http://localhost:1337/).
-4. It is using [webpack](https://webpack.js.org/) to build the scripts and bundle it for the browser. If you don't know what that is, don't fret. All you need to know is that any changes you make within the `public` folder will automatically build. You should be able to make a change, refresh the page, and see the results.
-5. Open the project folder in your favorite text editor ([VS Code](https://code.visualstudio.com/) is our favorite).
+4. Open the project folder in your favorite text editor ([VS Code](https://code.visualstudio.com/) is our favorite).
 
 ## The Situation
 
@@ -13,6 +12,10 @@ You have a client who sells widgets online. She already has a mobile app that al
 ### Tasks
 
 The two files you are interested in to implement these tasks are `public/index.html` & `public/index.js`. Feel free to add as many files as you want to the `public` folder if you need to.
+
+The app is using [webpack](https://webpack.js.org/) to build the scripts and bundle it for the browser. If you don't know what that is, don't fret. All you need to know is that any changes you make within the `public` folder will automatically build. You should be able to make a change, refresh the page, and see the results.
+
+The app is also already pulling in [babel](https://babeljs.io/) with [ES2015](https://babeljs.io/learn-es2015/) & [react](https://facebook.github.io/react/) presets to build the script bundle. This will allow you to write the app using [ES2015](https://babeljs.io/learn-es2015/) & [JSX](https://facebook.github.io/react/docs/jsx-in-depth.html) syntax if you so desire. Again, if you don't know what that is, don't worry about it. You can also just write "normal javascript" (aka [ES5](https://benmccormick.org/2015/09/14/es5-es6-es2016-es-next-whats-going-on-with-javascript-versioning/)) and everything will still work great.
 
 For your convenience, the page is including the [bootstrap](http://getbootstrap.com/) base CSS file. Feel free to use any bootstrap and/or custom styles along with any package, library, or framework available on [npm](https://www.npmjs.com/) to implement the following:
 
