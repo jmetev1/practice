@@ -48,6 +48,6 @@ For your convenience, the page is including the [bootstrap](http://getbootstrap.
 	}
 	```
 
-	The server will accept decimal values or US currency formatted values (e.g. _$500_) for the _price_ field.
+	The server will accept decimal values or US currency formatted values (e.g. _$500_) for the _price_ field. **Make sure to avoid a full page refresh when the form submits. The form submission and handling of the results should happen completely client-side.**
 
-7. Add validation to the form to require the item name to not be empty and the price to be greater than zero. The price field should be liberal in what it accepts (e.g. _5000_, _$5000_, _5000.00_, _5,000.00_, & _$5,000.00_ should all be valid values). Inform the user of validation issues in whatever way you deem most appropriate.
+7. Add validation to the form to require the item name to not be empty and the price to be greater than zero. The price field should be liberal in what it accepts (e.g. _5000_, _$5000_, _5000.00_, _5,000.00_, & _$5,000.00_ should all be valid values). Inform the user of validation issues in whatever way you deem most appropriate. **Make sure to block submission of the form if validation fails.**
